@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+
+  <head>
+    <title>my app</title>
+    
+    <script data-require="angular.js@*" data-semver="1.3.7" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.7/angular.js"></script>
+    <script data-require="ui-router@*" data-semver="0.2.13" src="https://rawgit.com/angular-ui/ui-router/0.2.13/release/angular-ui-router.js"></script>
+    <!-- <script>
+      document.write('<base href="'+ document.location.pathname +'" />')
+    </script>  -->
+    <script src="app.js"></script>
+    <style>
+        ul { padding-left: 0;
+        } 
+        li { list-style: none; }
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        ul li{
+            display: inline;
+            margin-right: 10px;
+        }
+        </style>
+  </head> 
+
+  <body>
+    <ul>
+      <li><a href="#/main">Main</a></li>
+      <li><a href="#/main/posts">Posts</a></li>
+      <li><a href="#/main/comments">Comments</a></li>
+      <li><a href="#/main/photos">Photos</a></li>
+    </ul>
+    
+    <div ui-view=""></div>
+
+  </body> 
+
+</html>

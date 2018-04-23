@@ -1,0 +1,25 @@
+<div>
+    <!-- <h5>Child state FORM 1</h5>
+    <pre>{{Model}}</pre>
+    
+    Change the value in a child state FROM 1
+    <input ng-model="Model.Name" /> -->
+
+    <table>
+        <tr>
+            <th>albumId</th>
+            <th>id</th>
+            <th>title</th>
+            <!-- <th>url</th> -->
+            <th>thumbnailUrl</th>
+        </tr>
+        <tr ng-repeat="x in mydata">
+            <td>{{x.albumId}}</td>
+            <td>{{x.id}}</td>
+            <td>{{x.title}}</td>
+            <!-- <td>{{x.url}}</td> -->
+            <td><img ng-src="{{x.thumbnailUrl}}" alt="not found"></td>
+        </tr>
+        
+    </table>
+</div>
